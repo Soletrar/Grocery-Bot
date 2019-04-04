@@ -34,7 +34,7 @@ namespace GroceryBot
 
         private const int PtWidth = 438;
 
-        public MainFrm(Form splashForm, ExtensionForm main, Incoming In, Outgoing Out)
+        public MainFrm(ExtensionForm main)
         {
             InitializeComponent();
 
@@ -43,10 +43,10 @@ namespace GroceryBot
             metroComboBox3.Sorted = true;
 
             _conn = main;
-            _in = In;
-            _out = Out;
+            _in = main.In;
+            _out = main.Out;
 
-            FormClosed += (sender, args) => splashForm.Close();
+            FormClosed += (sender, args) => main.Close();
         }
 
         private void MainFrm_Load(object sender, EventArgs e)
@@ -156,10 +156,10 @@ namespace GroceryBot
 
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var comboSender = (MetroComboBox)sender;
+            var cbox = (MetroComboBox)sender;
             try
             {
-                switch (comboSender.Name.Last())
+                switch (cbox.Name.Last())
                 {
                     case '1':
                         Helper.CurrentItemId1 = ((IBlackHoleItem)((MetroComboBox)sender).SelectedItem).Id;
@@ -241,10 +241,8 @@ namespace GroceryBot
             metroComboBox3.SelectedItem = null;
         }
 
-        private async Task SendNotification(string message)
-        {
+        private async Task SendNotification(string message) => 
             await _conn.Connection.SendToServerAsync(_out.RoomUserWhisper, "GB Grocery Bot: " + message, 0);
-        }
 
         private void cbBlackHole_CheckedChanged(object sender, EventArgs e)
         {

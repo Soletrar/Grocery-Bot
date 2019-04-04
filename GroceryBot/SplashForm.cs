@@ -35,7 +35,7 @@ namespace GroceryBot
         private void metroButton1_Click(object sender, EventArgs e)
         {
             Hide();
-            new MainFrm(this, this, In, Out).Show();
+            new MainFrm(this).Show();
         }
     }
 }
