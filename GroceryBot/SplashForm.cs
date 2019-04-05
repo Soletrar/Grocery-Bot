@@ -1,5 +1,4 @@
 ﻿using System;
-using Sulakore.Communication;
 using Sulakore.Habbo;
 using Sulakore.Modules;
 
