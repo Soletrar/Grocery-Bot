@@ -62,6 +62,7 @@
             this.metroComboBox1.Location = new System.Drawing.Point(23, 73);
             this.metroComboBox1.Name = "metroComboBox1";
             this.metroComboBox1.Size = new System.Drawing.Size(185, 29);
+            this.metroComboBox1.Sorted = true;
             this.metroComboBox1.TabIndex = 1;
             this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroComboBox1.UseSelectable = true;
@@ -74,6 +75,7 @@
             this.metroComboBox2.Location = new System.Drawing.Point(23, 108);
             this.metroComboBox2.Name = "metroComboBox2";
             this.metroComboBox2.Size = new System.Drawing.Size(185, 29);
+            this.metroComboBox2.Sorted = true;
             this.metroComboBox2.TabIndex = 2;
             this.metroComboBox2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroComboBox2.UseSelectable = true;
@@ -86,6 +88,7 @@
             this.metroComboBox3.Location = new System.Drawing.Point(23, 143);
             this.metroComboBox3.Name = "metroComboBox3";
             this.metroComboBox3.Size = new System.Drawing.Size(185, 29);
+            this.metroComboBox3.Sorted = true;
             this.metroComboBox3.TabIndex = 3;
             this.metroComboBox3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroComboBox3.UseSelectable = true;

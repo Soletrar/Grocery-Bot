@@ -1,4 +1,5 @@
 ﻿using System;
+
 using Sulakore.Habbo;
 using Sulakore.Modules;
 
@@ -11,8 +12,6 @@ namespace GroceryBot
     [Module("Grocery Bot", "A fun automatized application lel")]
     public partial class SplashForm : ExtensionForm
     {
-        public override bool IsRemoteModule => true;
-
         public SplashForm()
         {
             InitializeComponent();

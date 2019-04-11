@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace GroceryBot
 
         public override string ToString() => Name;
 
-        public static Task<List<IBlackHoleItem>> GetBlackHoleItems()
+        public static Task<List<IBlackHoleItem>> GetBlackHoleItemsTask()
         {
             var dict = new Dictionary<int, string>
             {

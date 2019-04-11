@@ -1,7 +1,4 @@
-﻿using Sulakore.Communication;
-using Tangine;
-
-namespace GroceryBot
+﻿namespace GroceryBot
 {
     internal static class Helper
     {
