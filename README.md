@@ -1,4 +1,4 @@
-# Grocery Bot
+# Grocery List Bot
 Tool for botting on Habbo's Grocery List game (habbo.com).
 
 ### What it does?
