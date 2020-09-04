@@ -11,6 +11,6 @@ The program consists of obtaining predefined items from a selected black hole.
   - [ ] Automatically detect items according to host messages.
 
 ## How do I use that?
-You need to know how to use **[Tanji](https://github.com/ArachisH/Tanji)** (Habbo Hotel Packet/Data Sniffer/Manipulator) in order to use this tool.
+You need to know how to use **[Tanji](ArachisH/Tanji)** in order to use this tool.
 
 This is an **Extension** so install it normally.
